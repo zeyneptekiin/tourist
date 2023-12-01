@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700&family=Noto+Sans+JP:wght@100;200&family=Poppins:wght@300;400;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300&display=swap');
+
+/* RESET CSS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* CSS */
+
+:root {
+    --text-pale: #282A30D9;
+    --text: #282A30;
+    --text-light-pale: #FFFFFFD9;
+    --text-light: #fff;
+    --accent: #01C77F;
+    --text-medium: #77767E;
+    --text-logo: #0B82B3;
+    --text-wrapper-light: #F9F9F9;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    width: 1280px; 
+    margin: auto;
+    font-family: Poppins;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 5.25rem;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1.88rem;
+}
+
+.header__navbar-list {
+    display: flex;
+    align-items: center;
+}
+
+.header__navbar-list__item {
+    /* padding: 0 1rem; */
+    padding-left: 5rem;
+    font-weight: 600;
+}
+
+.header__navbar-list__item:first-of-type {
+    padding: 0;
+}
+
+.header__navbar-list__item:first-of-type > a > span {
+    color: var(--text-logo);
+} 
+
+.header__navbar-list__item:first-of-type > a {
+    display: flex;
+    align-items: center;
+}
+
+.header__navbar-list__item > a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--text-pale);
+}
+
+.header__searchbar {
+    position: relative;
+}
+  
+.header__searchbar::before {
+    content: url(search.svg);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 7px;
+    width: 24px;
+    height: 24px;
+}
+  
+.header__searchbar__self {
+    padding: .25rem;
+    padding-left: calc(30px + .25rem);
+    border-radius: 0.5rem;
+    border: 1px solid var(--text);
+    background: #FFF;
+    color: var(--text);
+    font-family: Poppins;
+    font-size: 1.5rem;
+}
+
+.header__searchbar__self::placeholder {
+    color: var(--text);
+}
+
+.container {
+    display: inline-block;
+    width: 100%;
+}
+
+.inner-container {
+    padding-left: 3rem;
+}
+
+.city-info {
+    height: 30.25rem;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.city-info__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.city-info__img__self {
+    width: 100%;
+    max-height: 30.25rem;
+    object-fit: cover;
+}
+
+.city-info__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.city-info__text {
+    color: var(--text-light-pale);
+    display: inline-block;
+}
+
+.city-info__text--title {
+    font-size: 8rem;
+    text-transform: uppercase;
+}
+
+.city-info__text--p {
+    margin-top: 2rem;
+    font-size: 2.25rem;
+}
+
+.city-info__cta {
+    margin-top: 2rem;
+    padding: .75rem .65rem;
+    font-size: 1.75rem;
+    color: var(--text-light);
+    border-radius: 45px;
+    background: var(--accent);
+    border: none;
+    text-align: center;
+    font-weight: 500;
+}
+
+.trip-planner-info {
+    max-width: 29.125rem;
+    margin-top: 2.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start; /*???*/
+}
+
+.trip-planner-info h2 {
+    color: var(--text);
+    font-family: Poppins;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.trip-planner-info p {
+    margin-top: 1rem;
+    color: var(--text-medium);
+    font-size: 1.75rem;
+    font-weight: 5150;
+}
+
+.trip-planner-info__cta {
+    padding: .70rem .94rem;
+    margin-top: 2rem;
+    font-size: 1.75rem;
+    color: var(--text-light);
+    border-radius: 45px;
+    background: var(--accent);
+    border: none;
+    text-align: center;
+    font-weight: 600;
+    font-family: Poppins;
+    line-height: 122.5%;
+}
+
+.trip-planner-info button {
+    display: flex;
+    align-items: center;
+}
+
+.trip-planner-info button > span {
+    margin-left: .75rem;
+}
+
+/* swiper */
+
+.swiper {
+    margin-left: 3.125rem;
+    margin-top: 1.62rem;
+}
+
+.swiper-wrapper {
+    margin-top: 1rem !important;
+    max-height: 18.75rem;
+    border: none;
+}
+
+.swiper-slide {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: none;
+    width: 12.5rem !important;
+    height: 18.75rem !important;
+    line-height: 110px;
+    text-align: center;
+    margin-right: 1rem !important;
+}
+
+.wrapper-box__img  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.9375rem;
+    z-index: -1;
+}
+
+.section-categories {
+    margin-top: 5.625rem;
+}
+
+.slider {
+    margin-top: 3rem;
+}
+
+.slider-title {
+    color: var(--text);
+    font-family: Poppins;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.28125rem;
+}
+
+.swiper-slide > h3 {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--text-wrapper-light);
+    justify-content: center;
+    font-family: Poppins;
+    font-size: 1.3125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.03125rem;
+}
+
+/* swiper end */

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cities</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body style="background-color: #FFF;">
+  <header class="header">
+    <!-- Navbar -->
+    <nav class="header__navbar">
+      <ul class="header__navbar-list">
+        <li class="header__navbar-list__item">
+          <a href="#"><img src="logo_2-01 4.svg" alt=""><span>Tourist</span></a>
+        </li>
+        <li class="header__navbar-list__item">
+          <a href="#">Home</a>
+        </li>
+        <li class="header__navbar-list__item">
+          <a href="#">Download</a>
+        </li>
+      </ul>
+    </nav>
+
+    <span class="header__searchbar">
+      <input class="header__searchbar__self" type="search" id="header-searchbar-info" placeholder="Search City">
+    </span>
+  </header>
+  <!-- Container -->
+  <div class="container">
+    <section class="city-info">
+      <div class="city-info__img">
+        <img class="city-info__img__self" id="cityImg"
+          src="https://d1uolqnvceabeb.cloudfront.net/city_background_photos/barcelona_1.jpg" alt="CityName">
+      </div>
+      <div class="city-info__content">
+        <h1 class="city-info__text city-info__text--title" id="cityName">BARCELONA</h1>
+        <p class="city-info__text city-info__text--p">A Superb Nightlife Scene</p>
+        <button class="city-info__cta">Start Planning</button>
+      </div>
+    </section>
+
+    <section class="trip-planner inner-container">
+      <div class="trip-planner-info">
+        <h2>Barcelona Trip Planner</h2>
+        <p>Find best places and plan your dream trip!</p>
+        <button class="trip-planner-info__cta"><img src="Vector.svg" alt=""><span>Get the App</span></button>
+      </div>
+    </section>
+
+    <!-- <section class="section-categories inner-container">
+      <div class="slider">
+        <div class="slider-title">dsfsdf</div>
+        <div class="swiper">
+          <div class="swiper-wrapper"></div>
+        </div>
+      </div> -->
+      <!-- 
+          <Swiper>
+            <SliderTitle />
+            <SwiperWrapper />       // TODO Append <Swiper /> to <Slider /> Section
+          </Swiper>
+        -->
+    <!-- </section> -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
